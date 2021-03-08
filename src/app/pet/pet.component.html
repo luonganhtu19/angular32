@@ -1,0 +1,12 @@
+<h2>Pet profile</h2>
+<label for="petName">
+  <input id="petName" type="text" [(ngModel)]="pet.petName">
+</label>
+<br>
+<label for="petImg">
+  <input type="text" id="petImg" [(ngModel)]="pet.petImg">
+</label>
+<br>
+<h3>Information pet: </h3>
+<h4>Pet name: {{pet.petName}}</h4>
+<h4><img [src]="pet.petImg" style="max-width: 100%" alt=""></h4>
